@@ -32,6 +32,18 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* <!-- Google Tag Manager --> */}
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-T54CP95');
+            `
+          }} />
+          {/* <!-- End Google Tag Manager --> */}
+
           <link rel="preload" as="font" href="/fonts/Nexa/NexaHeavy.otf" type="opentype" />
           <link rel="preload" as="font" href="/fonts/Nexa/NexaLightItalic.otf" type="opentype" />
           <link rel="preload" as="font" href="/fonts/Infra/InfraRegular.otf" type="opentype" />
@@ -78,6 +90,10 @@ export default class MyDocument extends Document {
           `}</style>
         </Head>
         <body>
+          <noscript dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T54CP95" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`
+          }} />
+
           <Main />
           <NextScript />
         </body>
