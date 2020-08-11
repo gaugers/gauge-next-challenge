@@ -5,22 +5,23 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Block1 = styled.div`
     min-height: 500px;
-    background-image: url("/images/report-bg1.jpg");
+    background-image: url("/images/report-bg1-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 500px;
+    background-size: auto 500px;
     background-position-x: center;
     margin-bottom: 30px;
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-        min-height: 648px;
-        background-size: 100% 648px;
+      min-height: 648px;
+      background-size: 100% 648px;
     }
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-        background-image: unset;
-        position: relative;
+      background-image: url("/images/report-bg1.jpg");
+      background-image: unset;
+      position: relative;
     }
 `
 

@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="pt">
         <Head>
           {/* <!-- Google Tag Manager --> */}
           <script dangerouslySetInnerHTML={{
