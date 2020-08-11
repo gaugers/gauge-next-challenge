@@ -58,7 +58,7 @@ const Component = React.memo((props: ComponentProps) => {
 
     const link = document.createElement('a');
     //@ts-ignore
-    link.href = `${process.env.PUBLIC_URL}/${file}`;
+    link.href = `/reports/${file}`;
     link.download = file;
     document.body.appendChild(link);
     link.click();
