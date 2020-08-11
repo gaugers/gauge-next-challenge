@@ -1,15 +1,18 @@
 import React from 'react';
+import loadable from '@loadable/component'
+
 import { Container, Col, Row } from 'react-bootstrap';
 
-import Form from "./form";
 import * as S from "./styled";
+
+const Form = loadable(() => import('./form'))
 
 export interface ComponentProps {
     id: string;
 }
 
 
-const Component = React.memo((props: ComponentProps) => {  
+const Component = React.memo((props: ComponentProps) => {
   return (
     <S.Section id={props.id}>
       <Container>

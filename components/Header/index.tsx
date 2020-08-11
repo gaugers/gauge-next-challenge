@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Col, Row, Nav } from "react-bootstrap"
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
+import loadable from '@loadable/component'
 
-import Links from "./links";
 import * as S from "./styled";
+const Links = loadable(() => import('./links'))
 
 export interface ComponentProps {
   id: string;

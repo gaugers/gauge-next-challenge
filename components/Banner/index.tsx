@@ -1,7 +1,10 @@
 import React from 'react';
+import loadable from '@loadable/component'
+
 import { Container, Row, Col } from "react-bootstrap"
 
-import Services from '../Services';
+const Services = loadable(() => import('../Services'))
+
 import * as S from "./styled";
 
 export interface ComponentProps {
