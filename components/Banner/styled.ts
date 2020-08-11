@@ -17,7 +17,7 @@ export const Section = styled.div`
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-        background-image: url('/images/dotted.jpg');
+        background-image: url('/images/dotted.webp');
         background-size: 100% auto;
     }
 `

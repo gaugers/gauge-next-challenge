@@ -22,12 +22,12 @@ const Component = React.memo((props: ComponentProps) => {
       <Container>
         <Row>
           <S.Circle
-            src="/images/circle-bg.png"
+            src="/images/circle-bg.webp"
             className="d-none d-lg-block"
             alt="gauge circle icon background image"
           />
           <S.Circle
-            src="/images/circle-bg.png"
+            src="/images/circle-bg.webp"
             className="d-lg-none col-12"
             onLoad={onLoad}
             alt="gauge circle icon background image"
