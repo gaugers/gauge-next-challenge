@@ -51,7 +51,7 @@ export default class MyDocument extends Document {
           <link rel="preload" as="font" href="/fonts/Infra/InfraExtraBold.otf" type="opentype" />
           <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBold.otf" type="opentype" />
           <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBoldItalic.otf" type="opentype" />
-          <style jsx global>{`
+          <style dangerouslySetInnerHTML={{__html: `
             @font-face {
               font-family: 'NexaHeavy';
               font-display: swap;
@@ -87,7 +87,7 @@ export default class MyDocument extends Document {
               font-display: swap;
               src: url('/fonts/Infra/InfraSemiBoldItalic.otf') format("opentype");
             }
-          `}</style>
+          `}} />
         </Head>
         <body>
           <noscript dangerouslySetInnerHTML={{
