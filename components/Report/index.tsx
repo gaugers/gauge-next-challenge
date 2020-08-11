@@ -78,7 +78,7 @@ const Component = React.memo((props: ComponentProps) => {
         <Row>
           <Col xs="12" sm="12" md="12" lg="7">
             <S.Block1>
-              <S.ReportBg src="/images/report-bg1.jpg" className="d-none d-lg-block" />
+              <S.ReportBg src="/images/report-bg1.webp" className="d-none d-lg-block" />
               <Col xs="12" sm="12" md="12">
                 <S.Title1>
                   #Saudades.

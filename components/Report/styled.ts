@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const Block1 = styled.div`
     min-height: 500px;
-    background-image: url("/images/report-bg1-mobile.jpg");
+    background-image: url("/images/report-bg1-mobile.webp");
     background-repeat: no-repeat;
     background-size: auto 500px;
     background-position-x: center;
@@ -19,7 +19,7 @@ export const Block1 = styled.div`
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-      background-image: url("/images/report-bg1.jpg");
+      background-image: url("/images/report-bg1.webp");
       background-image: unset;
       position: relative;
     }
@@ -50,7 +50,7 @@ export const SectionTitle = styled.h2`
 export const Block2 = styled(Col)`
     min-height: 300px;
     padding: 64px 30px;
-    background-image: url("/images/report-bg2.jpg");
+    background-image: url("/images/report-bg2.webp");
     background-repeat: no-repeat;
     background-size: 100% 300px;
     background-position-x: center;
