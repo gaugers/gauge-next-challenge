@@ -1,3 +1,4 @@
+//@ts-nocheck
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -44,13 +45,13 @@ export default class MyDocument extends Document {
           }} />
           {/* <!-- End Google Tag Manager --> */}
 
-          <link rel="preload" as="font" href="/fonts/Nexa/NexaHeavy.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Nexa/NexaLightItalic.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Infra/InfraRegular.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Infra/InfraBold.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Infra/InfraExtraBold.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBold.otf" type="opentype" />
-          <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBoldItalic.otf" type="opentype" />
+          <link rel="preload" as="font" href="/fonts/Nexa/NexaHeavy.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Nexa/NexaLightItalic.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Infra/InfraRegular.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Infra/InfraBold.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Infra/InfraExtraBold.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBold.otf" crossorigin="anonymous" />
+          <link rel="preload" as="font" href="/fonts/Infra/InfraSemiBoldItalic.otf" crossorigin="anonymous" />
           <style dangerouslySetInnerHTML={{__html: `
             @font-face {
               font-family: 'NexaHeavy';
