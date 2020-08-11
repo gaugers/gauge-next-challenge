@@ -33,6 +33,15 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <link rel="icon" href="/images/favicon.ico" />
+          <meta
+            name="description"
+            content="Somos uma consultoria digital com foco em estratégia de mercado, analytics, mídia, comunicação, pesquisa e experiência do usuário."
+          />
+          <meta
+            name="keywords"
+            content="consultoria, digital, marketing, analytics, dados, mídia, pesquisa, experiência do usuário, tecnologia, comunicação, agência"
+          />
           {/* <!-- Google Tag Manager --> */}
           <script dangerouslySetInnerHTML={{
             __html: `
@@ -89,6 +98,14 @@ export default class MyDocument extends Document {
               src: url('/fonts/Infra/InfraSemiBoldItalic.otf') format("opentype");
             }
           `}} />
+
+          {/*
+          manifest.json provides metadata used when your web app is installed on a
+          user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+          */}
+          <link rel="manifest" href="/manifest.json" />
+
+          <title>Gauge | Consultoria digital em marketing e tecnologia | Grupo Stefanini</title>
         </Head>
         <body>
           <noscript dangerouslySetInnerHTML={{
