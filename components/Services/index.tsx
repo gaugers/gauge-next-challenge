@@ -28,7 +28,7 @@ const Component = React.memo((props: ComponentProps) => {
         <Row>
           <Col md="6" lg="4">
             <S.DivRelative>
-              <S.PointBg src="/images/point-bg.png" alt="gauge dotted background image" />
+              <S.PointBg src="/images/point-bg.webp" alt="gauge dotted background image" />
             </S.DivRelative>
           </Col>
         </Row>

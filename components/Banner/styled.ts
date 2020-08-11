@@ -8,7 +8,7 @@ export const Section = styled.div`
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
         background-size: 100% auto;
-        background-image: url('/images/dotted-mobile.jpg');
+        background-image: url('/images/dotted-mobile.webp');
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: 102px;

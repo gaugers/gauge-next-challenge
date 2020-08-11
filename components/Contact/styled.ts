@@ -13,7 +13,7 @@ export const Section = styled.div`
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
         background-size: 100% 350px;
-        background-image: url('/images/dotted-right-mobile.jpg');
+        background-image: url('/images/dotted-right-mobile.webp');
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: 110px;
